@@ -1,4 +1,4 @@
-# Artificial Intelligence For Music Shuffle Optimization
+\title{Artificial Intelligence For Music Shuffle Optimization}
 
 ## Mood Association and Cognitive Response in Individuals to Auditory Stimulation
 
