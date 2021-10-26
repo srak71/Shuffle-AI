@@ -335,28 +335,7 @@ the Python files linked above.
 
         ~~~~~~~~~~~~~~ Module 1 Queue: Threshold and Bias ~~~~~~~~~~~~~~
 
-# IV: Machine Learning
-
-## A) Threshold Modification 
-        
-In order to ensure maximum listening time, our model/queue must adapt to changes in the users
-preferences. This can be done by lowering or raising thresholds required to send a song from 
-our 3rd, song-checking Module up to our 2nd, user-checking Module; and also by changing the 
-threshold required to send our checked user mood and checked song from Module 2 to overwrite
-our optimal queue building Module 1, if required. 
-        
-## B) Training Model
-
-We will be using Sentiment Analysis on individual users' song preferences, and determining
-what we predict their mood might be. We will use this information to play songs that match 
-the mood of the individual, engaging the individual more and therefore likely increasing the
-amount of time spent listening to music. 
-        
-# TODO
-## C) Error Correcting Code
-
-
-## D) Security
+## F) Security
 
 The following security measures were taken to mitigate vulnerabilities of the AI system from attackers.
         
@@ -379,6 +358,27 @@ The following security measures were taken to mitigate vulnerabilities of the AI
         🔰 Stack Canaries and ASLR
           
             ☢️  Native in nltk and numpy libraries. 
+	
+
+# IV: Machine Learning
+
+## A) Threshold Modification 
+        
+In order to ensure maximum listening time, our model/queue must adapt to changes in the users
+preferences. This can be done by lowering or raising thresholds required to send a song from 
+our 3rd, song-checking Module up to our 2nd, user-checking Module; and also by changing the 
+threshold required to send our checked user mood and checked song from Module 2 to overwrite
+our optimal queue building Module 1, if required. 
+        
+## B) Training Model
+
+We will be using Sentiment Analysis on individual users' song preferences, and determining
+what we predict their mood might be. We will use this information to play songs that match 
+the mood of the individual, engaging the individual more and therefore likely increasing the
+amount of time spent listening to music. 
+        
+# TODO
+## C) Error Correcting Code
 
 
 # TODO
