@@ -25,10 +25,10 @@ def convert_to_wav(filename):
         return new_name
     else:
         if os.path.exists(filename,__contains__('.wav')):
-            # print('File <<', filename, '>> already converted to wav and removed.')
+            print('File <<', filename, '>> already converted to wav and removed.')
             return filename.split(".")[0] + '.wav'
         else:
-            # print('File <<', filename, '>> non-existant.')
+            print('File <<', filename, '>> non-existant.')
             return filename.split(".")[0] + '.wav'
 
 # get the lyrics to our song file
