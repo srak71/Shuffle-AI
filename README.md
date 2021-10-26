@@ -370,12 +370,12 @@ The following security measures were taken to mitigate vulnerabilities of the AI
             ☢️  No one admin aside from /master can edit all three modules, but can read all modules.
             
             ☢️  /master does not have access to run program or change global instances without a second admin 
-             authorization.
+             	authorization.
             
             ☢️  No one admin can edit or view all global instances or edit and run all three modules. 
             
             ☢️  /master solely cannot edit non-module subsections (any of global), but /master can edit and 
-            read all three modules by itself.
+            	read all three modules by itself.
             
         🔰 Stack Canaries and ASLR
           
