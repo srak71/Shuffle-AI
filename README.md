@@ -184,6 +184,7 @@ My AI model will correlate mood associated with input sound determined by a seri
         song.type_sng : The predicted genre for the current song.
         
         ~~~~~~~Lyric Analysis~~~~~~~
+	
         song.nltk_lyrics : Use of natural language API to analyze lyrics of song.cur, 
         only if  the song contains lyrics, gives a value = [happy OR sad  OR neutral OR
         Null if song.cur does not contain any lyrics]. 
