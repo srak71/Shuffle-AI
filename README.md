@@ -400,7 +400,7 @@ Future optimizations could also include subdermal implants, however this may be
 impractical unless it was already done for other reasons anyways. One possible current
 use for subdermal audio and mood influence may be to inject subdermal audio emitters for
 animals in captivity and in zoos, or for the ease of capture-and-release sample collection.
-Animals are already regularly microchipped in both cases. Frequently, animals have a 
+Animals are already regularly microchipped in both cases. Often, animals have a 
 different auditory perception frequency range, optimized individually for each animal.
 Subdermal speakers could be used to play a sound to sooth the animal, and can serve as
 an alternative to tranquilizer darts or deadly action like in the incident of the killing 
