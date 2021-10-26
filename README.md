@@ -109,4 +109,4 @@
         stop the music from continuing playing. Results from these previous MCI studies are shown in Table
         8.2 above. (Coan 128)
 
-        Results for various prior MCI studies are summarized in Table 8.4. (Coan 130) 
+            Results for various prior MCI studies are summarized in Table 8.4. (Coan 130) 
