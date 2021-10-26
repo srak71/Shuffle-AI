@@ -134,14 +134,14 @@ can be somewhere else in Queue).
 
 My AI model will correlate mood associated with input sound determined by a series of following embedded modules:
 
-                ~~~~~~~~~~~~~~Module 1: Queue~~~~~~~~~~~~~~
+   Module 1: Queue
 
                     Module with a collection of valid songs that match the user's cognitive state, 
                 queued with the most significant and highest certainty at the head of the 
                 playlist stack, in location song.next_song and queue_songs[1].  
 
  
-                ~~~~~~~~~~~~~~Module 2: User~~~~~~~~~~~~~~
+   Module 2: User
 
                     Use of adapted machine learning algorithms to analyze if the current song 
                 matches user   preferences, or if the song is skipped or user selected. If 
@@ -149,14 +149,14 @@ My AI model will correlate mood associated with input sound determined by a seri
                 and biases(i.e. user.valid_mood == TRUE), our module pushes the song to our 
                 Queue Module (1) as a valid song to be played, else the song is dumped (skipped). 
 
-                ~~~~~~~~~~~~~~Module 3: Song~~~~~~~~~~~~~~
+   Module 3: Song
 
                     Our deepest embedded module, used in the analysis of the current song user is
                 listening to. 
 
 ## B) Variables & Functions 
 
-        ~~~~~~~~~~~~~~Global Variables and Functions~~~~~~~~~~~~~~
+   Global Variables and Functions
         
         (global) song : Our current playing song.
         
@@ -168,7 +168,7 @@ My AI model will correlate mood associated with input sound determined by a seri
         
         (global) user : The current individual user listening to music.
         
-        ~~~~~~~~~~~~~~Module 3: Variables and Functions~~~~~~~~~~~~~~
+   Module 3: Variables and Functions
         
         song.cur : The current song being played.
         
@@ -208,7 +208,7 @@ My AI model will correlate mood associated with input sound determined by a seri
         by int bias, by adding specified bias to our original threshold. Stores the value in 
         song.mood_thresh. No return value.
         
-        ~~~~~~~~~~~~~~Module 2: Variables and Functions~~~~~~~~~~~~~~
+   Module 2: Variables and Functions
         
         user.mood_thresh : The threshold needed to be reached by the module to allocate the 
         user to a certain mood. 
@@ -230,7 +230,7 @@ My AI model will correlate mood associated with input sound determined by a seri
         by adding specified bias to our original threshold. Stores the value in 
         user.mood_thresh. Returns a new threshold value.
         
-        ~~~~~~~~~~~~~~Module 1: Variables and Functions~~~~~~~~~~~~~~
+   Module 1: Variables and Functions
         
         song.playlist_songs : Our queued deck of all available songs where 
         
@@ -254,7 +254,7 @@ My AI model will correlate mood associated with input sound determined by a seri
 
 To see a detailed description of individual edge weight allocation, please refer to the Jupyter Notebook linked above.
 
-        ~~~~~~~~~~~~~~ Module 3 ←→ Module 2 ~~~~~~~~~~~~~~
+   Module 3 ←→ Module 2
 
         Note: Secure nodal interaction. 
         /master can edit both modules but cannot edit global instance variables. 
@@ -264,7 +264,7 @@ To see a detailed description of individual edge weight allocation, please refer
         cannot give permission to edit Module 3 global instance variables nor run its 
         functions.
 
-        ~~~~~~~~~~~~~~ Module 2 ←→ Module 1 ~~~~~~~~~~~~~~
+   Module 2 ←→ Module 1
 
         Note: Secure nodal interaction. 
         /master can edit both modules but cannot edit global instance variables. 
@@ -273,7 +273,7 @@ To see a detailed description of individual edge weight allocation, please refer
         variables corresponding to unauthorized modules. For instance, Module 2 access 
         cannot give permission to edit Module 1 global instance variables nor run its functions.
 
-        ~~~~~~~~~~~~~~   Module 1 ←→ Global   ~~~~~~~~~~~~~~
+   Module 1 ←→ Global
 
         Note: Secure nodal interaction. 
 	 	/master alone cannot edit global, and any individual admin only has 
