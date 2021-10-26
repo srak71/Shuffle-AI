@@ -54,10 +54,12 @@
         into a spatial signal. 
 ## C) Mechanics of the Ear
 
-            Auditory neurons in all levels of the auditory system display tonotopic organization- they are spatially 
-        arranged in a corresponding map to the frequencies which they respond to. Both ears have two rows of 
-        sensory cells, a row of approximately 3500 inner hair cells(IHC), and three rows of approximately 4000 
-        outer hair cells(OHC). Each IHC is associated with around 18 to 20 different sensory auditory nerve 
+            Auditory neurons in all levels of the auditory system display tonotopic organization- 
+        they are spatially arranged in a corresponding map to the frequencies which they respond 
+        to. Both ears have two rows of sensory cells, a row of approximately 3500 inner hair 
+        cells(IHC), and three rows of approximately 4000 outer hair cells(OHC). 
+        
+            Each IHC is associated with around 18 to 20 different sensory auditory nerve 
         fibers, responsible for the perception of sound, as well as some motor fibers for the inhibition of 
         some sound stimuli. Meanwhile, OHC have very few sensory fibers, rather, stimulation of OHC motor 
         fibers cause OHC’s to change in length, thereby stiffening or relaxing the basilar membrane and fine 
