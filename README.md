@@ -122,3 +122,109 @@
     can be somewhere else in Queue). 
     
         Data was collected via Kaggle, and all credit for the data goes to :
+
+
+# Constructing The Neural Network
+
+## A) Converting Raw Data
+
+My AI model will correlate mood associated with input sound determined by a series of following embedded modules:
+
+                    ~~~~~~~~~~~~~~Module 1: Queue~~~~~~~~~~~~~~
+                    
+                    Module with a collection of valid songs that match the user's cognitive state, 
+                    queued with the most significant and highest certainty at the head of the 
+                    playlist stack, in location song.next_song and queue_songs[1].  
+
+                    ~~~~~~~~~~~~~~Module 2: User~~~~~~~~~~~~~~
+                    
+                    Use of adapted machine learning algorithms to analyze if the current song 
+                    matches user   preferences, or if the song is skipped or user selected. If 
+                    the song satisfies conditions by meeting thresholds determined by our weights 
+                    and biases(i.e. user.valid_mood == TRUE), our module pushes the song to our 
+                    Queue Module (1) as a valid song to be played, else the song is dumped (skipped). 
+
+                    ~~~~~~~~~~~~~~Module 3: Song~~~~~~~~~~~~~~
+                    
+                    Our deepest embedded module, used in the analysis of the current song user is
+                    listening to. 
+
+## B) Variables & Functions 
+
+        ~~~~~~~~~~~~~~Global Variables and Functions~~~~~~~~~~~~~~
+        
+        (global) song : Our current playing song.
+        
+        (global) queue_songs : Our queued playlist that we will be building using our 
+        AI model. Value at the 0 index is our current song, and value at index 1 is our 
+        next song to play.
+        (global) deck_songs : Unqueued deck of all available songs that we can play.
+        (global) user : The current individual user listening to music.
+        
+        ~~~~~~~~~~~~~~Module 3: Variables and Functions~~~~~~~~~~~~~~
+        
+        song.cur : The current song being played.
+        song.nxt_sng : The next song in our queue. 
+        song.is_usr_selected : A boolean, True if current song is user selected/user cued.
+        song.is_skipped : A boolean, True if user decides to skip current song, False if 
+        user listens to more than 70% of the song. A True (skip) would mean the user does 
+        not like the current playing song.
+        song.len_sng : The length, in SECONDS, of the cur song.
+        song.type_sng : The predicted genre for the current song.
+        
+        ~~~~~~~Lyric Analysis~~~~~~~
+        song.nltk_lyrics : Use of natural language API to analyze lyrics of song.cur, 
+        only if  the song contains lyrics, gives a value = [happy OR sad  OR neutral OR
+        Null if song.cur does not contain any lyrics]. 
+        
+        ~~~~~~~Threshold Check~~~~~~~
+        
+        song.mood_thresh : The threshold needed to be reached to associate a song with a 
+        certain mood.
+        song.pred_mood() : Use of historical data and machine learning to determine moods
+        commonly associated with type of cur song. Function returns a predicted mood for 
+        associated current song.
+        song.cert_mood() : Function that returns our certainty (0<=C<=1) that the associated 
+        mood for cur song is correct.
+        song.valid_mood() : Returns a boolean True if song.mood_thresh reached, else False.
+        song.edit_thresh(int bias) : Overwrites the value of our song’s mood threshold, determined 
+        by int bias, by adding specified bias to our original threshold. Stores the value in 
+        song.mood_thresh. No return value.
+        
+        ~~~~~~~~~~~~~~Module 2: Variables and Functions~~~~~~~~~~~~~~
+        
+        user.mood_thresh : The threshold needed to be reached by the module to allocate the 
+        user to a certain mood. 
+        user.pred_mood() : Our prediction of the cur user’s mood, determined by previous 
+        played song asserting song.is_usr_selected == True (i.e. we want to learn the users
+        preference of songs to determine their mood, so we will only use songs the user 
+        actively selected as they are most representative of the user’s internal mood and
+        will give negative scores to songs/moods associated with songs where 
+        song.is_skipped == True).
+        user.cert_mood() : Returns our certainty (0<=C<=1) that the user’s predicted 
+        mood is correct.
+        user.valid_mood() : Returns a boolean True if user.mood_thresh reached, else 
+        False (i.e. we are uncertain of users mood). 
+        user.edit_thresh(int bias) : Overwrites the value of our user’s mood threshold 
+        by adding specified bias to our original threshold. Stores the value in 
+        user.mood_thresh. Returns a new threshold value.
+        
+        ~~~~~~~~~~~~~~Module 1: Variables and Functions~~~~~~~~~~~~~~
+        
+        song.playlist_songs : Our queued deck of all available songs where 
+        song.pred_mood() == user.pred_mood() AND 
+        user.cert_mood() >= user.mood_thresh AND
+        song.cert_mood() >=  song.mood_thresh
+        Resulting playlist preserved in global queue_songs.
+
+
+
+
+
+
+
+
+
+
+
+
