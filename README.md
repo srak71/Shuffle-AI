@@ -1,8 +1,7 @@
 # Artificial Intelligence For Music Shuffle Optimization
 # Mood Association and Cognitive Response in Individuals to Auditory Stimulation
 
-## | Saransh Rakshak | Georgiana Estrada | Aayush Sutaria |
-## | Brain Heo | Yichen Ma |
+## |Saransh Rakshak|Georgiana Estrada|Aayush Sutaria|Brain Heo|Yichen Ma|
 
     Completed for Cognitive Science C100, Basic Issues In Cognition,
 
@@ -410,8 +409,18 @@ of Harambe in 2016 at the Cincinnati Zoo.
 
 # VII. Referenced Sources
 
+        Foster, David; Hearing and the Vestibular System; Psychology 110: Introduction to 
+        Biological Psychology; UC Berkeley, 2021. 
 
+        Coan, James A.; Allen, John J.B.: Handbook of Emotion Elicitation and Assessment; 
+        Oxford University Press, USA; April, 19, 2007; 
 
+        Stratton, Valerie N.; Zalanowski, Annette H.: Psychology of Music: Volume 19 Issue 2, 
+        page(s): 121-127; The Pennsylvania State University: Altoona Campus, 3000 Ivyside Park, 
+        Altoona, PA 16601, USA; October 1, 1991.
+
+	    Wagner, David; Weaver, Nicholas; Ada Popa, Raluca; Computer Security; 
+        UC Berkeley, Updated 2021.
 
 
 
