@@ -330,11 +330,11 @@ To see a detailed description of individual module layer activation threshold,
 and associated decision tree (trie) with incorporated bias, please refer to 
 the Python files linked above.
                 
-        ~~~~~~~~~~~~~~ Module 3 Song: Threshold and Bias ~~~~~~~~~~~~~~
+   Module 3 Song: Threshold and Bias
 
-        ~~~~~~~~~~~~~~ Module 2 User: Threshold and Bias ~~~~~~~~~~~~~~
+   Module 2 User: Threshold and Bias
 
-        ~~~~~~~~~~~~~~ Module 1 Queue: Threshold and Bias ~~~~~~~~~~~~~~
+   Module 1 Queue: Threshold and Bias
 
 ## F) Security
 
