@@ -25,24 +25,24 @@
         down into two functioning variables: loudness and pitch.
         
             Volume can be determined from the amplitude of the stimuli sound wave, or how much change
-            in Y occurs given a range X (wavelength), while pitch is derived to be the frequency of the 
-            sound wave, or the length of X to complete one cycle (or wavelength). Pitch is measured in 
-            Hertz (Hz), and limitations in the human auditory system allows us to perceive sounds in 
-            the 1000-5000 Hz range with relatively greater sensitivity (other animals’ auditory systems 
-            may have different restrictions or sensitivity ranges, thus some animals may have much greater 
-            hearing and easily can perceive sounds humans cannot). We can hear this range at a greater 
-            frequency due to the structure of the pinna (outer ear), which is shaped to amplify this 
-            1000-5000Hz range and muffle sounds outside.
+        in Y occurs given a range X (wavelength), while pitch is derived to be the frequency of the 
+        sound wave, or the length of X to complete one cycle (or wavelength). Pitch is measured in 
+        Hertz (Hz), and limitations in the human auditory system allows us to perceive sounds in 
+        the 1000-5000 Hz range with relatively greater sensitivity (other animals’ auditory systems 
+        may have different restrictions or sensitivity ranges, thus some animals may have much greater 
+        hearing and easily can perceive sounds humans cannot). We can hear this range at a greater 
+        frequency due to the structure of the pinna (outer ear), which is shaped to amplify this 
+        1000-5000Hz range and muffle sounds outside.
         
 ## B) Anatomy of the Ear
 
-        Past the pinna, we reach the middle ear, consisting of three small bones (ossicles), 
+            Past the pinna, we reach the middle ear, consisting of three small bones (ossicles), 
         called the malleus (hammer), incus (anvil), and stapes (stirrup). The ossicles act as 
         an amplifier to small mechanical vibrations of air molecules, and sensitivity of the ossicles 
         can be changed by contracting muscles in the ear to filter out unwanted sounds (for instance, 
         contracting when loud noise prevents damage). 
         
-        Further down in the ear, we reach the cochlea, made up of a coil of three parallel canals- 
+            Further down in the ear, we reach the cochlea, made up of a coil of three parallel canals- 
         the vestibular canal, middle canal, and tympanic canal- all which branch to the vestibulocochlear
         nerve (VIII). Sound vibrations of the oval window cause a wave to pass through the vestibular canal, 
         and travel back down the tympanic canal. At the base of the tympanic canal lies a small moveable 
