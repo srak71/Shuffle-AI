@@ -220,7 +220,61 @@ My AI model will correlate mood associated with input sound determined by a seri
 
 
 
+## Variable Allocation Visual
 
+# TODO: LINK PHOTO FOR VARS ALLOCATION GRAPH
+
+## Edge Weights 
+# TODO : FINISH MODULE 2, 3
+
+
+To see a detailed description of individual edge weight allocation, please refer to the Jupyter Notebook linked above.
+
+~~~~~~~~~~~~~~ Module 3 ←→ Module 2 ~~~~~~~~~~~~~~
+Note: Secure nodal interaction. 
+/master can edit both modules but cannot edit global instance variables. 
+Assigned admin(s) can edit respective modules, but admin cannot edit global 
+variables corresponding to unauthorized modules. For instance, Module 2 access 
+cannot give permission to edit Module 3 global instance variables nor run its functions.
+
+~~~~~~~~~~~~~~ Module 2 ←→ Module 1 ~~~~~~~~~~~~~~
+Note: Secure nodal interaction. 
+/master can edit both modules but cannot edit global instance variables. 
+Assigned admin(s) can edit respective modules, but admin cannot edit global 
+variables corresponding to unauthorized modules. For instance, Module 2 access 
+cannot give permission to edit Module 1 global instance variables nor run its functions.
+
+~~~~~~~~~~~~~~   Module 1 ←→ Global   ~~~~~~~~~~~~~~
+Note: Secure nodal interaction. 
+ /master alone cannot edit global, and any individual admin only has 
+ access to edit a subsection of global variables that pertains to its
+ corresponding module.
+song → playlist_songs
+Assert song.pred_mood() == user.pred_mood()
+Ensure that the song's predicted mood is the same as our predicted 
+mood for the user.
+Assert user.cert_mood() >= user.mood_thresh
+Verify that we have a reasonable assumption for our user's mood.
+Assert song.cert_mood() >=  song.mood_thresh
+Verify that we have a reasonable assumption for our song’s mood.
+Calculate any bias errors and incorporate them into the song threshold
+with our function song.edit_thresh().
+queue_songs → playlist_songs
+Calculate any bias errors and incorporate them into the user threshold 
+with our function user.edit_thresh().
+Calculate any bias errors and incorporate them into the song threshold
+with our function song.edit_thresh().
+Incorporating new bias, populate queue_songs with song.playlist_songs
+deck_songs → playlist_songs
+Unqueued deck of all songs. 
+Convert songs with lyrics to .wav
+Generate lyrics from .wav file with Natural Language Tools Kit (nltk)’s
+google audio to text, save as plain text file. 
+Produce sentiment score for corresponding song using analyze_text(text_file)
+and SentimentIntensityAnalyzer().polarity_score(text_file) (provided by nltk)
+user → playlist_songs
+Generate a finalized song with song.playlist_songs and save into global 
+queue_songs.
 
 
 
