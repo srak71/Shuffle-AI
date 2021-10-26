@@ -338,7 +338,7 @@ the Python files linked above.
 
 ## F) Security
 
-The following security measures were taken to mitigate vulnerabilities of the AI system from attackers.
+The following security measures were taken to mitigate memory safety vulnerabilities of our AI system from attackers.
         
         🔰 Use of a memory safe language: python v3.10.0.
         
