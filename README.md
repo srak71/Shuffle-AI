@@ -1,5 +1,5 @@
 # Artificial Intelligence For Music Shuffle Optimization
-#   Mood Association and Cognitive Response in Individuals to Auditory Stimulation
+## Mood Association and Cognitive Response in Individuals to Auditory Stimulation
 
 ## | Saransh Rakshak | Georgiana Estrada | Aayush Sutaria | Brain Heo | Yichen Ma |
 
