@@ -308,8 +308,10 @@ To see a detailed description of individual edge weight allocation, please refer
         with our function song.edit_thresh().
 
             Incorporating new bias, populate queue_songs with song.playlist_songs
+	    
         deck_songs → playlist_songs
-        Unqueued deck of all songs. 
+	
+            Unqueued deck of all songs. 
 
             Convert songs with lyrics to .wav
         Generate lyrics from .wav file with Natural Language Tools Kit (nltk)’s
