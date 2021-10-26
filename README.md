@@ -256,10 +256,9 @@ To see a detailed description of individual edge weight allocation, please refer
         ~~~~~~~~~~~~~~ Module 3 ←→ Module 2 ~~~~~~~~~~~~~~
 
         Note: Secure nodal interaction. 
-
         /master can edit both modules but cannot edit global instance variables. 
 
-        Assigned admin(s) can edit respective modules, but admin cannot edit global 
+        	Assigned admin(s) can edit respective modules, but admin cannot edit global 
         variables corresponding to unauthorized modules. For instance, Module 2 access 
         cannot give permission to edit Module 3 global instance variables nor run its 
         functions.
@@ -267,20 +266,18 @@ To see a detailed description of individual edge weight allocation, please refer
         ~~~~~~~~~~~~~~ Module 2 ←→ Module 1 ~~~~~~~~~~~~~~
 
         Note: Secure nodal interaction. 
-
         /master can edit both modules but cannot edit global instance variables. 
 
-        Assigned admin(s) can edit respective modules, but admin cannot edit global 
+        	Assigned admin(s) can edit respective modules, but admin cannot edit global 
         variables corresponding to unauthorized modules. For instance, Module 2 access 
         cannot give permission to edit Module 1 global instance variables nor run its functions.
 
         ~~~~~~~~~~~~~~   Module 1 ←→ Global   ~~~~~~~~~~~~~~
 
         Note: Secure nodal interaction. 
-
-         /master alone cannot edit global, and any individual admin only has 
-         access to edit a subsection of global variables that pertains to its
-         corresponding module.
+	 	/master alone cannot edit global, and any individual admin only has 
+	 access to edit a subsection of global variables that pertains to its
+	 corresponding module.
 
         song → playlist_songs
             Assert song.pred_mood() == user.pred_mood()
