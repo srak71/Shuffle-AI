@@ -112,3 +112,13 @@
         8.2 above. (Coan 128)
 
             Results for various prior MCI studies are summarized in Table 8.4. (Coan 130) 
+## C) Data Collection
+
+        My data heap was composed of the following data points; each column corresponds to a different 
+    type of data point (i.e. type of music, duration of music, user or random selected, common correlating 
+    mood associated with the type of music, etc.), and each row is an instance/subsection of that individual's 
+    listening cycle for an individual iteration of a song (as song can be played multiple times if criteria met
+    in each instance, however cannot be repeated - our current song cannot equal the next song, but possibly 
+    can be somewhere else in Queue). 
+    
+        Data was collected via Kaggle, and all credit for the data goes to :
