@@ -1,11 +1,6 @@
 """
-AI for Music Shuffle Optimization:
-Mood Association and Cognitive Response
-in Individuals to Auditory Stimulation
 @saranshrakshak
 Oct-24-2021
-v1.0
-https://github.com/saranshrakshak/shuffle_optim_AI.git
 """
 from pydub import AudioSegment
 import speech_recognition as sr
